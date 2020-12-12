@@ -9,6 +9,9 @@ public class TestTax {
         double yourTax = t.calcTax();
         System.out.println("your tax is " + yourTax);
         int totalOrderPrice = 400;
+
+        double centigrees = WeatherReport.convertToVelsius(98.7);
+        System.out.print(centigrees);
 //        if (totalOrderPrice > 100) {
 //            System.out.println("you will get a 20% discount");
 //

@@ -5,6 +5,22 @@ public class Tax {
     String state;
     int dependents;
 
+    public Tax() {
+    }
+
+    public Tax(double grossIncome, int dependents) {
+//        this.grossIncome = grossIncome;
+//        this.dependents = dependents;
+
+        this(grossIncome, "NY", dependents);
+    }
+
+    public Tax(double grossIncome, String state, int dependents) {
+        this.grossIncome = grossIncome;
+        this.state = state;
+        this.dependents = dependents;
+    }
+
     public double calcTax() {
 //        return 256.3;
         //
@@ -16,6 +32,11 @@ public class Tax {
 
         }
 
+    }
+
+    void verifyTax() {
+        SomeOtherClass s = new SomeOtherClass();
+        s.verifyTax(this);
     }
 
 }
