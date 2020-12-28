@@ -4,12 +4,16 @@ public class Employee
         extends Person implements Payable {
     String fName;
 
-    public Employee() {
-
+    public Employee(String fName) {
+        this.fName = fName;
     }
 
-    Employee(String fName, String lName) {
-        fName = fName + " " + lName;
+    public Employee() {
+    }
+
+    public Employee(String fName, String lName) {
+
+        this.fName = fName + " " + lName;
     }
 }
 

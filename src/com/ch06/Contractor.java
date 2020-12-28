@@ -5,4 +5,12 @@ public class Contractor extends Person implements Payable {
     public boolean increasePay() {
         return false;
     }
+
+    public Contractor() {
+
+    }
+
+    public Contractor(String fName, String lName) {
+
+    }
 }
