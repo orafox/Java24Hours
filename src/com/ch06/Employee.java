@@ -15,5 +15,16 @@ public class Employee
 
         this.fName = fName + " " + lName;
     }
+
+    @Override
+    public String getfName() {
+        return fName;
+    }
+
+    @Override
+    public boolean increaseSalary(int prcentage) {
+        System.out.println("Increasing salary by "+prcentage+" " +getfName());
+        return true;
+    }
 }
 

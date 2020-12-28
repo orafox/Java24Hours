@@ -11,4 +11,6 @@ public interface Payable {
         System.out.println("the default code implement pay increase goes here");
         return true;
     }
+
+    boolean increaseSalary(int prcentage);
 }
