@@ -54,8 +54,20 @@ public class Calculator {
         p1.add(button9);
         p1.add(buttonPoint);
         p1.add(buttonEqual);
+        JPanel p2 =new JPanel();
+        JLabel jll = new JLabel("Eman");
+        JLabel jll2 = new JLabel("iman");
+        p2.setBackground(new Color(0,0,0));
+        p2.add(jll);
+        p2.add(jll2);
+
+        p2.setLayout(new BoxLayout(p2,BoxLayout.Y_AXIS));
+        windowContent.add("South",p2);
+
         windowContent.add(p1);
         JFrame frame = new JFrame("Calculator");
+
+
         frame.setContentPane(windowContent);
         frame.pack();
         frame.setVisible(true);
