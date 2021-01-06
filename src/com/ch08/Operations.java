@@ -1,0 +1,5 @@
+package com.ch08;
+
+public enum Operations {
+    ADDITION,SUBTRACTION,DIVISION,MULTIPLYING,ILLEGAL_OPERATION
+}
