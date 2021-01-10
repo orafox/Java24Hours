@@ -32,5 +32,8 @@ public class SimpleCalculator {
         frame.setSize(400, 100);
         frame.setVisible(true);
 
+        JOptionPane.showConfirmDialog(null, "Somthing Happeded.>", "just a tesst ", JOptionPane.PLAIN_MESSAGE);
+
+
     }
 }

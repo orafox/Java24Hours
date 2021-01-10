@@ -21,6 +21,7 @@ public class Calculator {
     JPanel p1;
 
     public Calculator() {
+        CalculatorEngine2 calculatorEngine = new CalculatorEngine2(this);
 
         windowContent = new JPanel();
         BorderLayout bl = new BorderLayout();
@@ -54,6 +55,21 @@ public class Calculator {
         p1.add(button9);
         p1.add(buttonPoint);
         p1.add(buttonEqual);
+
+        button0.addActionListener(calculatorEngine);
+        button1.addActionListener(calculatorEngine);
+        button2.addActionListener(calculatorEngine);
+        button3.addActionListener(calculatorEngine);
+        button4.addActionListener(calculatorEngine);
+        button5.addActionListener(calculatorEngine);
+        button6.addActionListener(calculatorEngine);
+        button7.addActionListener(calculatorEngine);
+        button8.addActionListener(calculatorEngine);
+        button9.addActionListener(calculatorEngine);
+        buttonEqual.addActionListener(calculatorEngine);
+        buttonPoint.addActionListener(calculatorEngine);
+        buttonPoint.addActionListener(calculatorEngine);
+
         JPanel p2 =new JPanel();
         JLabel jll = new JLabel("Eman");
         JLabel jll2 = new JLabel("iman");
@@ -76,6 +92,9 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        Calculator calc = new Calculator();
+       Calculator calc = new Calculator();
+
+     //   JOptionPane.showConfirmDialog(null, "Somthing Happeded.>", "just a tesst ", JOptionPane.PLAIN_MESSAGE);
+
     }
 }
