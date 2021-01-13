@@ -19,7 +19,6 @@ public class Calculator {
     JButton buttonPoint;
     JButton buttonEqual;
     JPanel p1;
-
     public Calculator() {
         CalculatorEngine2 calculatorEngine = new CalculatorEngine2(this);
 
@@ -70,15 +69,15 @@ public class Calculator {
         buttonPoint.addActionListener(calculatorEngine);
         buttonPoint.addActionListener(calculatorEngine);
 
-        JPanel p2 =new JPanel();
+        JPanel p2 = new JPanel();
         JLabel jll = new JLabel("Eman");
         JLabel jll2 = new JLabel("iman");
-        p2.setBackground(new Color(0,0,0));
+        p2.setBackground(new Color(0, 0, 0));
         p2.add(jll);
         p2.add(jll2);
 
-        p2.setLayout(new BoxLayout(p2,BoxLayout.Y_AXIS));
-        windowContent.add("South",p2);
+        p2.setLayout(new BoxLayout(p2, BoxLayout.Y_AXIS));
+        windowContent.add("South", p2);
 
         windowContent.add(p1);
         JFrame frame = new JFrame("Calculator");
@@ -92,9 +91,18 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-       Calculator calc = new Calculator();
+        Calculator calc = new Calculator();
 
-     //   JOptionPane.showConfirmDialog(null, "Somthing Happeded.>", "just a tesst ", JOptionPane.PLAIN_MESSAGE);
+        //   JOptionPane.showConfirmDialog(null, "Somthing Happeded.>", "just a tesst ", JOptionPane.PLAIN_MESSAGE);
+
+    }
+
+    public String getDisplayValue() {
+        return displayField.getText();
+    }
+
+    public void setDisplayValue(String val) {
+        displayField.setText(val);
 
     }
 }
