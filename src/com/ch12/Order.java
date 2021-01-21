@@ -1,4 +1,4 @@
-package com.ch11;
+package com.ch12;
 
 public class Order {
     int numOflover , numOfwife;
