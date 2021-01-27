@@ -24,4 +24,10 @@ public class Person {
         return fName + " " + sName;
     }
 
+    public boolean validatePayIncrease(Payable increaseFunction, int percent) {
+        boolean isIncreaseValid = increaseFunction.increasePay(percent);
+        System.out.println("increasing pay for " + sName + " is " + (isIncreaseValid ? "valid." : "not valid."));
+        return isIncreaseValid;
+    }
+
 }
