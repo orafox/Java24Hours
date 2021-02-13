@@ -1,7 +1,5 @@
-package com.ch07;
-import com.ch07.Person;
-import com.ch07.Contractor;
-import com.ch07.Employee;
+package com.ch04.ch07;
+
 public class TestPayIncrease {
     public static void main(String[] args) {
         Person workers[] = new Person[4];

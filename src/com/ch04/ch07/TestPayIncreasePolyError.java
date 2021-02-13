@@ -1,6 +1,4 @@
-package com.ch07;
-
-import com.ch06.Payable;
+package com.ch04.ch07;
 
 public class TestPayIncreasePolyError {
     public static void main(String[] args) {

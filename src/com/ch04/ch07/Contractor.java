@@ -1,4 +1,4 @@
-package com.ch07;
+package com.ch04.ch07;
 
 public class Contractor extends Person {
     public Contractor(String name) {

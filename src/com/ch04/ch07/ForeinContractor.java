@@ -1,4 +1,4 @@
-package com.ch07;
+package com.ch04.ch07;
 
 public class ForeinContractor extends Person {
     public ForeinContractor(String name) {
