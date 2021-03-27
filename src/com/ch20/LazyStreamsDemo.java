@@ -1,8 +1,12 @@
 package com.ch20;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
+import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 public class LazyStreamsDemo {
@@ -22,6 +26,16 @@ public class LazyStreamsDemo {
 
     public static void main(String[] args) {
         List<Beer> beers = loadCellar();
+
+        Collections.sort(beers);
+
+        beers.forEach(System.out::println);
+
+        Comparator<Beer> priceComparator = Comparator.comparing(beer -> beer.price);
+        System.out.println("==starting by descending price");
+        beers.sort(priceComparator.reversed());
+        beers.forEach(System.out::println);
+
         Stream<Beer> americanBeers = beers.stream().filter(brrsss -> {
             System.out.println("inside filter:" + brrsss.country);
             return "USA".equals(brrsss.country);
@@ -30,7 +44,30 @@ public class LazyStreamsDemo {
             System.out.println("Inside maptodouble:" + brrr.name + ":" + brrr.price);
             return brrr.price;
         });
+        System.out.println("start");
+        beers.stream().sorted(Comparator.comparing((Beer b) -> b.country).thenComparing(b -> b.price)).forEach(System.out::println);
+        List<Beer> sortedBeers = beers.stream().sorted(Comparator.comparing(b -> b.price)).collect(Collectors.toList());
+        System.out.println("sorted print");
+        sortedBeers.forEach(System.out::println);
 
-         System.out.println("The average American beers price is $ " + americanBeerPrices.average().getAsDouble());
+        System.out.println("The average American beers price is $ " + americanBeerPrices.average().getAsDouble());
+
+
+        System.out.println("==Starting by name and price");
+        beers.sort(Comparator.comparing((Beer ber) -> ber.name).thenComparing(ber -> ber.price));
+        beers.forEach(System.out::println);
+        System.out.println("start anathor==>");
+        beers.sort(Comparator.comparing(Beer::getName).thenComparing(Beer::getPrice));
+        beers.forEach(System.out::println);
+
+
+        beers.stream().sorted(Comparator.comparing(b -> b.price)).forEach(System.out::println);
+
+        List<Beer> sortedBeerss = beers.stream().sorted(Comparator.comparing(b -> b.price)).collect(Collectors.toList());
+        sortedBeerss.forEach(System.out::println);
+        Stream<String> beerName = Stream.of("Leffe blonde", "Chimay blue", "Same Adams");
+        beerName.forEach(System.out::println);
+        long MaxValue = LongStream.builder().add(10).add(15).add(21).build().max().getAsLong();
+        System.out.println(MaxValue);
     }
 }
