@@ -4,9 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.LongStream;
 
 public class CatDemo {
     public static void main(String[] args) {
+        LongStream evenNumbers = LongStream.iterate(0, num -> num + 2).limit(5);
+        evenNumbers.forEach(System.out::println);
+
         List<Cat> myCat = loadCat();
         myCat.forEach(System.out::println);
 //        System.out.println("start sort desc");

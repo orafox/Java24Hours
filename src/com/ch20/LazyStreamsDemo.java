@@ -1,9 +1,6 @@
 package com.ch20;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 import java.util.stream.LongStream;
@@ -69,5 +66,12 @@ public class LazyStreamsDemo {
         beerName.forEach(System.out::println);
         long MaxValue = LongStream.builder().add(10).add(15).add(21).build().max().getAsLong();
         System.out.println(MaxValue);
+
+
+        Optional<Beer> firstBeer = beers.stream().findFirst();
+        System.out.println("the first beer in collecton :" + firstBeer.orElse(new Beer("No Name", "No countery", 0)));
+
+
+
     }
 }

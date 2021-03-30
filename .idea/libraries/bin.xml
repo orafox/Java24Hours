@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="bin">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/Java/jdk1.8.0_241/db/bin" />
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/Java/jdk1.8.0_241/db/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../Program Files/Java/jdk1.8.0_241/db/bin" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../Program Files/Java/jdk1.8.0_241/db/lib" recursive="false" />
+  </library>
+</component>
