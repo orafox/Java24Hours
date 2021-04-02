@@ -1,6 +1,7 @@
 package com.ch11;
 
 public class Order {
+    public Object price;
     int numOflover , numOfwife;
     String msg;
 

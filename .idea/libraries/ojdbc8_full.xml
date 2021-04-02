@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ojdbc8-full">
+    <CLASSES>
+      <root url="file://D:/mySandbox/ojdbc8-full" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://D:/mySandbox/ojdbc8-full" recursive="false" />
+  </library>
+</component>
