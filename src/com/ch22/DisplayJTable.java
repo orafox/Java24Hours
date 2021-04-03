@@ -142,7 +142,8 @@ public class DisplayJTable extends JFrame {
             frame1.getContentPane().add(scroll);
             frame1.add(scroll, BorderLayout.CENTER);
             frame1.setVisible(true);
-           // frame1.pack();
+          //  frame1.pack();
+            //frame1.setSize(1000, 900);
 //            add(this, new JScrollPane(jtable));
 
         } catch (Exception e) {
