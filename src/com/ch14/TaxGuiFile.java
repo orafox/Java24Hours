@@ -95,7 +95,7 @@ public class TaxGuiFile extends JFrame {
 
     public static void main(String[] args) {
         TaxGuiFile taxframe = new TaxGuiFile();
-        taxframe.setSize(400, 150);
+        taxframe.setSize(1000, 900);
         taxframe.setVisible(true);
     }
 }

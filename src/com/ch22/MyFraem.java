@@ -32,8 +32,9 @@ public class MyFraem extends JFrame implements TableModelListener {
         MyFraem myFraem = new MyFraem("myTest Window");
         myFraem.pack();
         myFraem.setVisible(true);
-
+        myFraem.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+
 
 
 
@@ -51,6 +52,7 @@ class MyTableModel extends AbstractTableModel {
         myData.add(new Order(1,"IBM", 100, 135.5f));
         myData.add(new Order(2,"AAPL", 300, 290.12f));
         myData.add(new Order(3,"MOT", 2000, 8.32f));
+        myData.add(new Order(4,"ORCL", 500, 27.8f));
         myData.add(new Order(4,"ORCL", 500, 27.8f));
 
     }

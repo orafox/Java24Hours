@@ -10,7 +10,8 @@ public class ShowAnyData {
             System.exit(0);
 
         }
-        try (Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/lesson21");
+//        try (Connection conn = DriverManager.getConnection("jdbc:derby://localhost:1527/lesson21");
+              try (Connection conn = DriverManager.getConnection("jdbc:mssql://localhost:1527/lesson21");
              //
              //  try (Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.225.128:1521:orcl","hr","hr");
 
